@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="File"
+        android:icon="@mipmap/folder_solid"
+        app:showAsAction="ifRoom"
+        >
+        <menu>
+            <item android:id="@+id/menu_open"
+                android:title="open"
+                android:icon="@mipmap/file_open">
+            </item>
+            <item android:id="@+id/menu_close"
+                android:title="close"
+                android:icon="@mipmap/file_close"
+                ></item>
+            <item android:icon="@mipmap/edit"
+                android:title="Edit">
+                <menu>
+                    <item android:id="@+id/menu_cut"
+                        android:icon="@mipmap/cut"
+                        android:title="Cut"></item>
+                    <item android:id="@+id/menu_copy"
+                        android:icon="@mipmap/copy"
+                        android:title="Copy"></item>
+                </menu>
+            </item>
+        </menu>
+    </item>
+</menu>

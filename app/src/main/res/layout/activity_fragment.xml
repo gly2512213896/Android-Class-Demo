@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FragmentActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#51B5E6" />
+
+    <RadioGroup
+        android:id="@+id/fl_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:checkedButton="@id/fl_rb_message"
+        >
+
+        <RadioButton
+            android:id="@+id/fl_rb_message"
+            style="@style/flRadioButton"
+            android:drawableTop="@drawable/fl_rb_message_bg"
+            android:paddingVertical="5dp"
+            android:text="消息" />
+        <RadioButton
+            android:id="@+id/fl_rb_phone"
+            style="@style/flRadioButton"
+            android:drawableTop="@drawable/fl_rb_message_bg"
+            android:paddingVertical="5dp"
+            android:text="通讯录" />
+        <RadioButton
+            android:id="@+id/fl_rb_discover"
+            style="@style/flRadioButton"
+            android:drawableTop="@drawable/fl_rb_message_bg"
+            android:paddingVertical="5dp"
+            android:text="发现" />
+        <RadioButton
+            android:id="@+id/fl_rb_me"
+            style="@style/flRadioButton"
+            android:drawableTop="@drawable/fl_rb_message_bg"
+            android:paddingVertical="5dp"
+            android:text="我的" />
+    </RadioGroup>
+
+
+</LinearLayout>
