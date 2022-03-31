@@ -16,6 +16,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.edu.sit.todayapplication.listview.ListViewActivity;
 import cn.edu.sit.todayapplication.menu.ContextMenuActivity;
 import cn.edu.sit.todayapplication.menu.OptionsMenuActivity;
 import cn.edu.sit.todayapplication.menu.PopupMenuActivity;
@@ -29,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
     private Button btnContextMenu;
     private Button btnPopupMenu;
     private Button btnToolbarMenu;
+    private Button btnListView;
+
 
     private List<Button> buttons=new ArrayList<>();
     @Override
@@ -54,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
         btnContextMenu=findViewById(R.id.btn_contextmenu);
         btnPopupMenu=findViewById(R.id.btn_popupmenu);
         btnToolbarMenu=findViewById(R.id.btn_toolbar);
+        btnListView=findViewById(R.id.btn_listview);
         // 设置监听器
         btnEditText.setOnClickListener(myClickListener);
         btnFragment.setOnClickListener(myClickListener);
@@ -61,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
         btnContextMenu.setOnClickListener(myClickListener);
         btnPopupMenu.setOnClickListener(myClickListener);
         btnToolbarMenu.setOnClickListener(myClickListener);
+        btnListView.setOnClickListener(myClickListener);
         }
         class MyClickListener implements View.OnClickListener{
 
@@ -85,6 +90,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_toolbar:
                     intent=new Intent(MainActivity.this, ToolbarActivity.class);
+                    break;
+                case R.id.btn_listview:
+                    intent=new Intent(MainActivity.this, ListViewActivity.class);
                     break;
                 default:throw new IllegalArgumentException("null pointer");
             }
