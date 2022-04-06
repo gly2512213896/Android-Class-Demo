@@ -13,8 +13,8 @@
         android:id="@+id/toolbar"
         app:titleTextColor="#f00"
         app:titleTextAppearance="@style/ToolbarTextStyle"
-        app:popupTheme="@style/ToolbarPopupTheme"
         app:navigationIcon="@mipmap/back2"
+        app:popupTheme="@style/ToolbarPopupTheme"
         >
         <TextView
             android:layout_width="wrap_content"

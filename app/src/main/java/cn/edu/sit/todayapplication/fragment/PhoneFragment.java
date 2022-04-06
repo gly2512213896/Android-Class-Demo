@@ -14,6 +14,10 @@ import androidx.fragment.app.Fragment;
 
 import cn.edu.sit.todayapplication.R;
 
+/*
+只是进行碎片的定义，并不是activity页面
+真正的显示在FragmentActivity中
+ */
 public class PhoneFragment extends Fragment {
     private static final String ARG_PARAM ="param1";
     private String param;
@@ -54,7 +58,7 @@ public class PhoneFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         Log.i(TAG, "onCreateView: ");
-        //动态加载一个碎片，从container中取出一个碎片做成view
+        //动态加载一个碎片，把自定义的布局文件放到container中做成一个view
         View view = inflater.inflate(R.layout.fragment_phone, container,false);
         TextView textView=view.findViewById(R.id.tv_phone);
         textView.setText(param);

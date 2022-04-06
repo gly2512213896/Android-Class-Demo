@@ -4,19 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="5dp"
-    tools:context=".listview.ListViewActivity">
+    tools:context=".gridview.GridViewActivity">
 
-    <ListView
-        android:id="@+id/lv1"
+    <GridView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:divider="#0000"
-        android:choiceMode="singleChoice"
-        android:dividerHeight="10dp"
-        android:stackFromBottom="true"
-        tools:layout_editor_absoluteX="4dp"
-        android:listSelector="@drawable/listselector"
-        tools:layout_editor_absoluteY="4dp"></ListView>
-
+        android:id="@+id/gv"
+        android:numColumns="2"
+        android:horizontalSpacing="10dp"
+        ></GridView>
 </androidx.constraintlayout.widget.ConstraintLayout>

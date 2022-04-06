@@ -16,6 +16,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.edu.sit.todayapplication.gridview.GridViewActivity;
 import cn.edu.sit.todayapplication.listview.ListViewActivity;
 import cn.edu.sit.todayapplication.menu.ContextMenuActivity;
 import cn.edu.sit.todayapplication.menu.OptionsMenuActivity;
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnPopupMenu;
     private Button btnToolbarMenu;
     private Button btnListView;
+    private Button btnGridView;
 
 
     private List<Button> buttons=new ArrayList<>();
@@ -58,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
         btnPopupMenu=findViewById(R.id.btn_popupmenu);
         btnToolbarMenu=findViewById(R.id.btn_toolbar);
         btnListView=findViewById(R.id.btn_listview);
+        btnGridView=findViewById(R.id.btn_gridview);
         // 设置监听器
         btnEditText.setOnClickListener(myClickListener);
         btnFragment.setOnClickListener(myClickListener);
@@ -66,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
         btnPopupMenu.setOnClickListener(myClickListener);
         btnToolbarMenu.setOnClickListener(myClickListener);
         btnListView.setOnClickListener(myClickListener);
+        btnGridView.setOnClickListener(myClickListener);
         }
         class MyClickListener implements View.OnClickListener{
 
@@ -93,6 +97,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_listview:
                     intent=new Intent(MainActivity.this, ListViewActivity.class);
+                    break;
+                case R.id.btn_gridview:
+                    intent=new Intent(MainActivity.this, GridViewActivity.class);
                     break;
                 default:throw new IllegalArgumentException("null pointer");
             }

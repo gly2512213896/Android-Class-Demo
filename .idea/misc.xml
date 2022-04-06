@@ -10,7 +10,8 @@
         <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/drawable/listselector.xml" value="0.1205" />
         <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/activity_context_menu.xml" value="0.24947916666666667" />
         <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/activity_edit_text.xml" value="0.1" />
-        <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/activity_fragment.xml" value="0.41522491349480967" />
+        <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/activity_fragment.xml" value="0.264" />
+        <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/activity_grid_view.xml" value="0.109375" />
         <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/activity_list_view.xml" value="0.264" />
         <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/activity_main2.xml" value="0.24547101449275363" />
@@ -22,7 +23,10 @@
         <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/fragment_me.xml" value="0.11770833333333333" />
         <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/fragment_message.xml" value="0.24947916666666667" />
         <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/fragment_phone.xml" value="0.24947916666666667" />
+        <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/griditem.xml" value="0.264" />
         <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/listitem.xml" value="0.16799999999999998" />
+        <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/listitem_left.xml" value="0.24947916666666667" />
+        <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/listitem_right.xml" value="0.24947916666666667" />
         <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/viewfoot.xml" value="0.109375" />
         <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/viewhead.xml" value="0.109375" />
         <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/menu/context_menu.xml" value="0.109375" />
