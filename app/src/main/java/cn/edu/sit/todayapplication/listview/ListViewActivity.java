@@ -53,6 +53,7 @@ public class ListViewActivity extends AppCompatActivity {
 //                Toast.makeText(ListViewActivity.this, i+"custom click", Toast.LENGTH_SHORT).show();
 //            }
 //        });
+        // 4 listview多布局
        initPersonChat();
        mlv.setAdapter(new MultiLayoutAdapter(personChatList,this));
     }
