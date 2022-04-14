@@ -23,7 +23,9 @@ public class PopupMenuActivity extends AppCompatActivity {
             // 点击事件进行菜单的弹
             @Override
             public void onClick(View view) {
+                // 在哪个页面的哪个view上新建一个popupMenu
                 PopupMenu popupMenu=new PopupMenu(PopupMenuActivity.this,view);
+                // 为popMenu填充xml文件
                 popupMenu.getMenuInflater().inflate(R.menu.popup_menu,popupMenu.getMenu());
                 popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     @Override

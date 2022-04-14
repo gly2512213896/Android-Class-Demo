@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TodayApplication">
         <activity
+            android:name=".tablayout.TabLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerview.RecyclerViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".gridview.GridViewActivity"
             android:exported="false" />
         <activity

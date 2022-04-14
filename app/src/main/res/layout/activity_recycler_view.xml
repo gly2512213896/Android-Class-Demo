@@ -4,19 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="5dp"
-    tools:context=".listview.ListViewActivity">
+    tools:context=".recyclerview.RecyclerViewActivity">
 
-<!--    android:stackFromBottom="true"-->
-    <ListView
-        android:id="@+id/lv1"
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:choiceMode="singleChoice"
-        android:divider="#0000"
-        android:dividerHeight="10dp"
-        android:listSelector="@drawable/listselector"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="4dp"></ListView>
-
+        android:id="@+id/rv"
+        ></androidx.recyclerview.widget.RecyclerView>
 </androidx.constraintlayout.widget.ConstraintLayout>

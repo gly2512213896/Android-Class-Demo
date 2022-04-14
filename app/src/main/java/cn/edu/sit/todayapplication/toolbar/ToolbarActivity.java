@@ -34,7 +34,8 @@ public class ToolbarActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        this.getMenuInflater().inflate(R.menu.toobar_options_menu,menu);
+        // 把选项菜单填充一下，在xml文件中设置了ifRoom时把它放到ActionBar中，没有位置了才单独显示
+        this.getMenuInflater().inflate(R.menu.toolbar_options_menu,menu);
         return super.onCreateOptionsMenu(menu);
     }
 

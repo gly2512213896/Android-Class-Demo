@@ -21,6 +21,8 @@ import cn.edu.sit.todayapplication.listview.ListViewActivity;
 import cn.edu.sit.todayapplication.menu.ContextMenuActivity;
 import cn.edu.sit.todayapplication.menu.OptionsMenuActivity;
 import cn.edu.sit.todayapplication.menu.PopupMenuActivity;
+import cn.edu.sit.todayapplication.recyclerview.RecyclerViewActivity;
+import cn.edu.sit.todayapplication.tablayout.TabLayoutActivity;
 import cn.edu.sit.todayapplication.toolbar.ToolbarActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -33,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
     private Button btnToolbarMenu;
     private Button btnListView;
     private Button btnGridView;
+    private Button btnRecyclerView;
+    private Button btnTabLayout;
 
 
     private List<Button> buttons=new ArrayList<>();
@@ -61,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
         btnToolbarMenu=findViewById(R.id.btn_toolbar);
         btnListView=findViewById(R.id.btn_listview);
         btnGridView=findViewById(R.id.btn_gridview);
+        btnRecyclerView=findViewById(R.id.btn_recyclerview);
+        btnTabLayout=findViewById(R.id.btn_tablayout);
         // 设置监听器
         btnEditText.setOnClickListener(myClickListener);
         btnFragment.setOnClickListener(myClickListener);
@@ -70,6 +76,8 @@ public class MainActivity extends AppCompatActivity {
         btnToolbarMenu.setOnClickListener(myClickListener);
         btnListView.setOnClickListener(myClickListener);
         btnGridView.setOnClickListener(myClickListener);
+        btnRecyclerView.setOnClickListener(myClickListener);
+        btnTabLayout.setOnClickListener(myClickListener);
         }
         class MyClickListener implements View.OnClickListener{
 
@@ -100,6 +108,12 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_gridview:
                     intent=new Intent(MainActivity.this, GridViewActivity.class);
+                    break;
+                case R.id.btn_recyclerview:
+                    intent=new Intent(MainActivity.this, RecyclerViewActivity.class);
+                    break;
+                case R.id.btn_tablayout:
+                    intent=new Intent(MainActivity.this, TabLayoutActivity.class);
                     break;
                 default:throw new IllegalArgumentException("null pointer");
             }
