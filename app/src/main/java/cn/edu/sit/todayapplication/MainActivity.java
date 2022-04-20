@@ -24,6 +24,7 @@ import cn.edu.sit.todayapplication.menu.PopupMenuActivity;
 import cn.edu.sit.todayapplication.recyclerview.RecyclerViewActivity;
 import cn.edu.sit.todayapplication.tablayout.TabLayoutActivity;
 import cn.edu.sit.todayapplication.toolbar.ToolbarActivity;
+import cn.edu.sit.todayapplication.webview.WebViewActivity;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG ="MainActivity";
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnGridView;
     private Button btnRecyclerView;
     private Button btnTabLayout;
+    private Button btnWebView;
 
 
     private List<Button> buttons=new ArrayList<>();
@@ -67,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
         btnGridView=findViewById(R.id.btn_gridview);
         btnRecyclerView=findViewById(R.id.btn_recyclerview);
         btnTabLayout=findViewById(R.id.btn_tablayout);
+        btnWebView=findViewById(R.id.btn_webview);
         // 设置监听器
         btnEditText.setOnClickListener(myClickListener);
         btnFragment.setOnClickListener(myClickListener);
@@ -78,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
         btnGridView.setOnClickListener(myClickListener);
         btnRecyclerView.setOnClickListener(myClickListener);
         btnTabLayout.setOnClickListener(myClickListener);
+        btnWebView.setOnClickListener(myClickListener);
         }
         class MyClickListener implements View.OnClickListener{
 
@@ -114,6 +118,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_tablayout:
                     intent=new Intent(MainActivity.this, TabLayoutActivity.class);
+                    break;
+                case R.id.btn_webview:
+                    intent=new Intent(MainActivity.this, WebViewActivity.class);
                     break;
                 default:throw new IllegalArgumentException("null pointer");
             }

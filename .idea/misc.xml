@@ -13,10 +13,11 @@
         <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/drawable/ic_phone_sel.xml" value="0.1575" />
         <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/drawable/listselector.xml" value="0.1205" />
         <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/activity_context_menu.xml" value="0.24947916666666667" />
-        <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/activity_edit_text.xml" value="0.1" />
+        <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/activity_edit_text.xml" value="0.2" />
         <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/activity_fragment.xml" value="0.264" />
         <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/activity_grid_view.xml" value="0.109375" />
         <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/activity_list_view.xml" value="0.264" />
+        <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/activity_login.xml" value="0.24947916666666667" />
         <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/activity_main2.xml" value="0.24547101449275363" />
         <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/activity_options_menu.xml" value="0.24947916666666667" />
@@ -26,6 +27,7 @@
         <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/activity_tab_layout.xml" value="0.24947916666666667" />
         <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/activity_test1.xml" value="0.24947916666666667" />
         <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/activity_toolbar.xml" value="0.24947916666666667" />
+        <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/activity_web_view.xml" value="0.2" />
         <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/fragment_discover.xml" value="0.11770833333333333" />
         <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/fragment_me.xml" value="0.11770833333333333" />
         <entry key="..\:/Programme/AndroidSDK/Projects/app/src/main/res/layout/fragment_message.xml" value="0.24947916666666667" />

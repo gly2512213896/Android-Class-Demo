@@ -7,13 +7,14 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import java.util.List;
 
+// ViewPager2使用的adapter
 public class ImageStateAdapter extends FragmentStateAdapter {
     List<Fragment> fragmentList;
+
     public ImageStateAdapter(@NonNull FragmentActivity fragmentActivity, List<Fragment> fragmentList) {
         super(fragmentActivity);
-        this.fragmentList=fragmentList;
+        this.fragmentList = fragmentList;
     }
-
 
     @NonNull
     @Override

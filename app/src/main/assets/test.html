@@ -1,0 +1,21 @@
+<html>
+<head><title>Welcome to WebView</title></head>
+<body>
+<center>
+    <div style="margin—top:10%; font—size:30">Js调用Android</div>
+    <button style="margin-top:10%; width:160; height:60; font-size:30" onclick="android.login()">
+        登录
+    </button>
+    <h1 style="margin-top:10%" id="username"></h1>
+</center>
+
+<script>
+    function showUserName(username){
+        document.getElementById("username").innerText="登陆名:"+username;
+    }
+
+</script>
+</body>
+
+</html>
+
