@@ -13,15 +13,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
 
+import cn.edu.sit.todayapplication.broadcastreceiver.BroadcastReceiverActivity;
 import cn.edu.sit.todayapplication.gridview.GridViewActivity;
 import cn.edu.sit.todayapplication.listview.ListViewActivity;
 import cn.edu.sit.todayapplication.menu.ContextMenuActivity;
 import cn.edu.sit.todayapplication.menu.OptionsMenuActivity;
 import cn.edu.sit.todayapplication.menu.PopupMenuActivity;
 import cn.edu.sit.todayapplication.recyclerview.RecyclerViewActivity;
+import cn.edu.sit.todayapplication.service.ServiceActivity;
 import cn.edu.sit.todayapplication.tablayout.TabLayoutActivity;
 import cn.edu.sit.todayapplication.toolbar.ToolbarActivity;
 import cn.edu.sit.todayapplication.webview.WebViewActivity;
@@ -39,9 +39,10 @@ public class MainActivity extends AppCompatActivity {
     private Button btnRecyclerView;
     private Button btnTabLayout;
     private Button btnWebView;
+    private Button btnBroadcastReceiver;
+    private Button btnService;
 
 
-    private List<Button> buttons=new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,6 +71,8 @@ public class MainActivity extends AppCompatActivity {
         btnRecyclerView=findViewById(R.id.btn_recyclerview);
         btnTabLayout=findViewById(R.id.btn_tablayout);
         btnWebView=findViewById(R.id.btn_webview);
+        btnBroadcastReceiver=findViewById(R.id.btn_broadcastreceiver);
+        btnService=findViewById(R.id.btn_service);
         // 设置监听器
         btnEditText.setOnClickListener(myClickListener);
         btnFragment.setOnClickListener(myClickListener);
@@ -82,6 +85,8 @@ public class MainActivity extends AppCompatActivity {
         btnRecyclerView.setOnClickListener(myClickListener);
         btnTabLayout.setOnClickListener(myClickListener);
         btnWebView.setOnClickListener(myClickListener);
+        btnBroadcastReceiver.setOnClickListener(myClickListener);
+        btnService.setOnClickListener(myClickListener);
         }
         class MyClickListener implements View.OnClickListener{
 
@@ -121,6 +126,12 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_webview:
                     intent=new Intent(MainActivity.this, WebViewActivity.class);
+                    break;
+                case R.id.btn_broadcastreceiver:
+                    intent=new Intent(MainActivity.this, BroadcastReceiverActivity.class);
+                    break;
+                case R.id.btn_service:
+                    intent=new Intent(MainActivity.this, ServiceActivity.class);
                     break;
                 default:throw new IllegalArgumentException("null pointer");
             }

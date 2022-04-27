@@ -30,6 +30,7 @@ public class WebViewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_web_view);
 
         // 启动器，接收了其他activity传回的参数之后执行后续操作
         mLauncher= registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
@@ -42,7 +43,6 @@ public class WebViewActivity extends AppCompatActivity {
             }
         });
 
-        setContentView(R.layout.activity_web_view);
         mWv = findViewById(R.id.web_view);
 
         mTvTitle = findViewById(R.id.tv_title);
